@@ -106,7 +106,7 @@ const SearchPage = () => {
                         </div>
                         <a
                           className="flex-shrink-0 flex items-center justify-center text-indigo-600 w-10 h-10 rounded-full bg-gradient-to-b from-indigo-50 to-indigo-100 hover:from-white hover:to-indigo-50 focus:outline-none focus-visible:from-white focus-visible:to-white transition duration-150 ml-2"
-                          href={`/data/${item.id}`}
+                          href={`/data/${item.id}/${item.pkgname}`}
                         >
                           <span className="block font-bold">
                             <span className="sr-only">Read more</span> -&gt;
@@ -176,7 +176,7 @@ const SearchPage = () => {
                         </div>
                         <a
                           className="flex-shrink-0 flex items-center justify-center text-indigo-600 w-10 h-10 rounded-full bg-gradient-to-b from-indigo-50 to-indigo-100 hover:from-white hover:to-indigo-50 focus:outline-none focus-visible:from-white focus-visible:to-white transition duration-150 ml-2"
-                          href={item.repo_url}
+                          href={`/data/${item.id}/${item.pkgname}`}
                         >
                           <span className="block font-bold">
                             <span className="sr-only">Read more</span> -&gt;
@@ -195,7 +195,7 @@ const SearchPage = () => {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/dirtycves/template/blob/main/README.md"
           target="_blank"
           rel="noopener noreferrer"
         >
